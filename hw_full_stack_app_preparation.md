@@ -36,20 +36,26 @@ a: Client responsible for rendering all information obtained and released throug
 Whats the server responsible for?
 a: this retrieves, handles and files information instructed to log via client side.
 
-3. What are the the responsibilities of server.js?
-a: it listens to client requests via 5000 port.
+3. What are the the responsibilities of server.js? 
+a: it listens to and processes client front-end requests via 5000 port.  bodyParser.  DB stuff: .  
+
 
 4. What are the responsibilities of the `gamesRouter`?
 a: function that ensures the apps need to utilise the helper file is followed through.  without which our CRUD methods wouldn't work
 
 5. What process does the the client (front-end) use to communicate with the server?
-a: 
+a: requests. 
+(look at client side, GameForm.js and helper file = GamesService.js)
 
 6. What optional second argument does the `fetch` method take? And what is it used for in this application? Hint: See [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) on the MDN docs
+a: configu object.  it needs... )method )body )headers ) need to specify Content_type as application/JSON (What?):
 
 
 7. Which of the games API routes does the front-end application consume (i.e. make requests to)?
-8. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for?
+a: index, create, delete
+
+8. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for? 
+a: to connect to MongoDB
 
 ## Extension
 
